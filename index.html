@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 할 일 관리자</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 AI 할 일 관리자</h1>
+        <p class="subtitle">할 일을 입력하면 AI가 중요도와 카테고리를 알려줘요!</p>
+        
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="예: 내일 아침 9시에 우유 사기">
+            <button id="analyzeBtn">분석하기</button>
+        </div>
+
+        <div id="loading" class="hidden">AI가 분석 중입니다... 🧠</div>
+
+        <div id="resultArea" class="hidden">
+            <div class="result-card">
+                <h3>분석 결과</h3>
+                <div id="analysisResult" class="analysis-text"></div>
+                <div class="model-info">사용한 AI 모델: <span id="modelName"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
